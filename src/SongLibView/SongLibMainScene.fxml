@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SongLibView.SongViewController">
+   <children>
+      <ListView fx:id="listView" layoutX="24.0" layoutY="56.0" onMouseClicked="#handleMouseClick" prefHeight="324.0" prefWidth="200.0" />
+      <TextField fx:id="artist" layoutX="242.0" layoutY="56.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="album" layoutX="411.0" layoutY="56.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="year" layoutX="575.0" layoutY="56.0" prefHeight="25.0" prefWidth="65.0" />
+      <Text layoutX="110.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
+      <Text layoutX="304.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artist" />
+      <Text layoutX="469.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album" />
+      <Text layoutX="596.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year" />
+      <Button id="addButton" layoutX="242.0" layoutY="102.0" mnemonicParsing="false" onAction="#addButton" text="Add" />
+      <Button id="editButton" layoutX="299.0" layoutY="102.0" mnemonicParsing="false" onAction="#editButton" text="Edit" />
+      <Button id="deleteButton" layoutX="356.0" layoutY="102.0" mnemonicParsing="false" onAction="#deleteButton" text="Delete" />
+      <ImageView fitHeight="236.0" fitWidth="395.0" layoutX="242.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/music.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="251.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Song Library by Brian Wong and Laszlo Glant" />
+      <Text layoutX="427.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright 2016" />
+   </children>
+</AnchorPane>
